@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Радость Моя - Благотворительный фонд</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+  <style>
+    @font-face {
+      font-family: "PF Agora Slab Pro Medium";
+      src: url(pfagoraslabpro-medium.ttf);
+    }
+    @font-face {
+      font-family: "PF Agora Slab Pro Regular";
+      src: url(pfagoraslabpro-reg.ttf);
+    }
+    @font-face {
+      font-family: "PF Agora Slab Pro Bold";
+      src: url(pfagoraslabpro-bold.ttf);
+    }
+
+    html, body {
+      min-height: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .pure-g > div {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    a, p {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      color: #000;
+    }
+
+    a:link, a:visited {
+      text-decoration: none;
+    }
+
+    a:hover, a:active {
+      text-decoration: underline;
+      color: #E42C1A;
+    }
+
+    body {
+      background-color: rgb(251, 277, 151);
+      position: relative;
+    }
+
+    html, body, .pure-g [class *= "pure-u"] {
+      font-family: "PF Agora Slab Pro Medium", sans-serif;
+    }
+
+    div.header, div.footer {
+      position: absolute;
+      background-image: url(pattern2.svg);
+      background-size: contain;
+      min-width: 100%;
+      height: 10%;
+      left: 0;
+    }
+
+    div.header {
+      top: 0;
+    }
+
+    div.footer {
+      bottom: 0;
+    }
+
+    div.dummy {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .dummy .logo {
+      padding: 10px;
+    }
+
+    .dummy .text {
+      height: 100%;
+      padding: 10px;
+    }
+
+    .dummy .text .text-line {
+      /*height: 25%;*/
+      line-height: 1.5;
+      font-size: 3vmin;
+    }
+
+    .dummy .text .text-line:first-child p {
+      border-top: solid 3px #E42C1A;
+    }
+
+    .dummy .text .text-line p {
+      height: 100%;
+      vertical-align: middle;
+    }
+
+    .contacts {
+      position: absolute;
+      top: 10%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-family: "PF Agora Slab Pro Medium", sans-serif;
+      padding: 10px 0;
+    }
+
+    .contacts a {
+      font-family: "PF Agora Slab Pro Bold", sans-serif;
+    }
+
+    @media screen and (max-width: 35.5em) {
+      .dummy .text .text-line {
+        font-size: 5vmin;
+        text-align: center;        
+      }      
+    }
+
+  </style>
+</head>
+<body>
+  <div class="header"></div>
+  <div class="middle-block pure-g">
+    <div class="pre-dummy pure-u-xl-1-4 pure-u-lg-1-6 pure-u-md-1-8 pure-u-sm-1-12 pure-u-1"></div>
+    <div class="dummy pure-u-xl-1-2 pure-u-lg-2-3 pure-u-md-3-4 pure-u-sm-5-6 pure-u-1">
+      <div class="dummy-wrap pure-g">
+        <div class="logo pure-u-md-2-5 pure-u-sm-1-3 pure-u-1">
+          <img class="pure-img" src="logo_RM.svg" alt="Логотип">
+        </div>
+        <div class="right-part pure-u-md-3-5 pure-u-sm-2-3 pure-u-1">
+          <div class="text">
+            <div class="text-line"><p>САЙТ</p></div>
+            <div class="text-line"><p>БЛАГОТВОРИТЕЛЬНОГО ФОНДА</p></div>
+            <div class="text-line"><p>&laquo;РАДОСТЬ МОЯ&raquo;</p></div>
+            <div class="text-line"><p>В РАЗРАБОТКЕ</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="post-dummy pure-u-xl-1-4 pure-u-lg-1-6 pure-u-md-1-8 pure-u-sm-1-12 pure-u-1"></div>
+  </div>
+  <div class="contacts">
+    Связаться с нами можно по телефону
+    <a href="tel:+79610598819">+7(961)059-88-19</a>
+    или по почте
+    <a href="mailto:ggs5858@gmail.com">ggs5858@gmail.com</a>
+  </div>
+  <div class="footer"></div>
+</body>
+</html>
